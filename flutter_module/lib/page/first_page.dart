@@ -20,15 +20,15 @@ class _FirstPageState extends State<FirstPage> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-            RaisedButton(
-                child: Text("pushNative"),
-                onPressed: (){
-                    FlutterBoost.singleton.open('native').then((value){
-                      print('call : $value');
-                    });
+          RaisedButton(
+              child: Text("pushNative"),
+              onPressed: (){
+                FlutterBoost.singleton.open('native').then((value){
+                  print('call : $value');
+                });
 
-                }
-              )
+              }
+          )
         ],
       ),
     );

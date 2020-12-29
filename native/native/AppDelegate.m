@@ -7,8 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "ChildObject.h"
-#import "ChildObject+print.h"
 #import <Flutter/Flutter.h>
 #import <flutter_boost/FlutterBoost.h>
 #import "PlatformRouterImp.h"
@@ -23,6 +21,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     PlatformRouterImp *router = [PlatformRouterImp new];
+    
+  UINavigationController * nav = [[UINavigationController alloc]initWithRootViewController:[[ViewController alloc]init]];
+    router.navigationController = nav;
+    
     [FlutterBoostPlugin.sharedInstance startFlutterWithPlatform:router onStart:^(FlutterEngine * _Nonnull engine) {
         // 注册MethodChannel，监听flutter侧的getPlatformVersion调用
         FlutterMethodChannel * flutterMethodChannel = [FlutterMethodChannel methodChannelWithName:@"flutter_native_channel" binaryMessenger:engine.binaryMessenger];
@@ -38,7 +40,7 @@
         
     }];
        self.window = [[UIWindow alloc] initWithFrame: [UIScreen mainScreen].bounds];
-       self.window.rootViewController = [[ViewController alloc]init];
+       self.window.rootViewController = router.navigationController;
        [self.window makeKeyAndVisible];
     
     return YES;

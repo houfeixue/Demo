@@ -8,10 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		ACA83C6A40B59E02D2020A97 /* Pods_native.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C3DA87477B20F443561954 /* Pods_native.framework */; };
-		BA8617AE258A10840082B2E9 /* FuObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8617AD258A10840082B2E9 /* FuObject.m */; };
-		BA8617B1258A10A50082B2E9 /* ChildObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8617B0258A10A50082B2E9 /* ChildObject.m */; };
-		BA8617B4258A13570082B2E9 /* ChildObject+print.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8617B3258A13570082B2E9 /* ChildObject+print.m */; };
-		BA8617B7258A13C20082B2E9 /* FuObject+print.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8617B6258A13C20082B2E9 /* FuObject+print.m */; };
 		BAAAC7282589E14900D1D6AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAAC7272589E14900D1D6AA /* AppDelegate.m */; };
 		BAAAC72E2589E14900D1D6AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAAC72D2589E14900D1D6AA /* ViewController.m */; };
 		BAAAC7332589E14A00D1D6AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAAAC7322589E14A00D1D6AA /* Assets.xcassets */; };
@@ -41,14 +37,6 @@
 /* Begin PBXFileReference section */
 		0F1DB4F87E5641647E196295 /* Pods-native.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-native.release.xcconfig"; path = "Target Support Files/Pods-native/Pods-native.release.xcconfig"; sourceTree = "<group>"; };
 		1791BF702292EE549EA1BB03 /* Pods-native.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-native.debug.xcconfig"; path = "Target Support Files/Pods-native/Pods-native.debug.xcconfig"; sourceTree = "<group>"; };
-		BA8617AC258A10840082B2E9 /* FuObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FuObject.h; sourceTree = "<group>"; };
-		BA8617AD258A10840082B2E9 /* FuObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FuObject.m; sourceTree = "<group>"; };
-		BA8617AF258A10A50082B2E9 /* ChildObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChildObject.h; sourceTree = "<group>"; };
-		BA8617B0258A10A50082B2E9 /* ChildObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChildObject.m; sourceTree = "<group>"; };
-		BA8617B2258A13570082B2E9 /* ChildObject+print.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChildObject+print.h"; sourceTree = "<group>"; };
-		BA8617B3258A13570082B2E9 /* ChildObject+print.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ChildObject+print.m"; sourceTree = "<group>"; };
-		BA8617B5258A13C20082B2E9 /* FuObject+print.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FuObject+print.h"; sourceTree = "<group>"; };
-		BA8617B6258A13C20082B2E9 /* FuObject+print.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FuObject+print.m"; sourceTree = "<group>"; };
 		BAAAC7232589E14800D1D6AA /* native.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = native.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAAAC7262589E14900D1D6AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BAAAC7272589E14900D1D6AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -134,14 +122,6 @@
 				BAAADDA52591FD2A0080DE60 /* PlatformRouterImp.m */,
 				BAAAC72C2589E14900D1D6AA /* ViewController.h */,
 				BAAAC72D2589E14900D1D6AA /* ViewController.m */,
-				BA8617AC258A10840082B2E9 /* FuObject.h */,
-				BA8617AD258A10840082B2E9 /* FuObject.m */,
-				BA8617AF258A10A50082B2E9 /* ChildObject.h */,
-				BA8617B0258A10A50082B2E9 /* ChildObject.m */,
-				BA8617B2258A13570082B2E9 /* ChildObject+print.h */,
-				BA8617B3258A13570082B2E9 /* ChildObject+print.m */,
-				BA8617B5258A13C20082B2E9 /* FuObject+print.h */,
-				BA8617B6258A13C20082B2E9 /* FuObject+print.m */,
 				BAAAC7322589E14A00D1D6AA /* Assets.xcassets */,
 				BAAAC7372589E14A00D1D6AA /* Info.plist */,
 				BAAAC7382589E14A00D1D6AA /* main.m */,
@@ -395,12 +375,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAAAC72E2589E14900D1D6AA /* ViewController.m in Sources */,
-				BA8617B7258A13C20082B2E9 /* FuObject+print.m in Sources */,
 				BAAADDA72591FD2A0080DE60 /* PlatformRouterImp.m in Sources */,
-				BA8617AE258A10840082B2E9 /* FuObject.m in Sources */,
-				BA8617B4258A13570082B2E9 /* ChildObject+print.m in Sources */,
 				BAAAC7282589E14900D1D6AA /* AppDelegate.m in Sources */,
-				BA8617B1258A10A50082B2E9 /* ChildObject.m in Sources */,
 				BAAAC7392589E14A00D1D6AA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
